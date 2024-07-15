@@ -1,6 +1,16 @@
-/* Custom styles for the Chinmay School Of Knowledge website */
 body {
     font-family: Arial, sans-serif;
+}
+
+.welcome-section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    /* Adjust text color for better readability against the background */
+    padding: 20px;
+    border-radius: 32% 36% 64% 68%;
 }
 
 header nav a {
@@ -27,9 +37,9 @@ main section {
 main h1,
 main h2 {
     color: #333;
-   
 }
-h2{
+
+h2 {
     margin-bottom: 0;
 }
 
@@ -41,7 +51,39 @@ main {
 
 footer {
     margin-top: 2rem;
-    
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
 }
 
 .dynamic-card {
@@ -53,16 +95,11 @@ footer {
     padding: 3rem 2rem;
 }
 
-
 .dynamic-card:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     background-color: #f3f4f6;
 }
-
-
-
-
 
 .highlight {
     color: #FFD700;
@@ -104,7 +141,7 @@ footer {
 #loginModal {
     display: flex;
 }
-/* Custom styles for the first section */
+
 .first-section {
     height: 600px;
     display: flex;
@@ -122,7 +159,6 @@ footer {
     padding: 3rem 1rem;
 }
 
-
 .content-center {
     width: 100%;
 }
@@ -130,4 +166,3 @@ footer {
 .first-section p {
     color: white;
 }
-
