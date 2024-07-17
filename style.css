@@ -1,5 +1,71 @@
+
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('building-education-florida-photos.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+   
+}
+
+
+header {
+    background-color: rgba(0, 128, 0, 0.7);
+    
+    color: white;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+  
+}
+
+header nav a {
+    transition: color 0.3s ease;
+    color: white;
+   
+    text-decoration: none;
+   
+    padding: 8px;
+    
+}
+
+header nav a:hover {
+    color: #e0e0e0;
+    
+}
+
+#loginBtn {
+    background-color: white;
+   
+    color: #007acc;
+   
+    padding: 8px 16px;
+  
+    border-radius: 4px;
+    
+    text-decoration: none;
+   
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+#loginBtn:hover {
+    background-color: #e0e0e0;
+   
+    color: #005580;
+   
+}
+
+main {
+    padding: 16px;
 }
 
 .welcome-section {
@@ -8,49 +74,30 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    /* Adjust text color for better readability against the background */
     padding: 20px;
     border-radius: 32% 36% 64% 68%;
+    text-align: center;
+   
 }
 
-header nav a {
-    transition: color 0.3s ease;
+
+.dynamic-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 32% 36% 64% 68%;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 3rem 2rem;
 }
 
-header nav a:hover {
-    color: #e0e0e0;
+.dynamic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #f3f4f6;
 }
 
-header a {
-    transition: background-color 0.3s ease;
-}
-
-header a:hover {
-    background-color: #e0e0e0;
-}
-
-main section {
-    margin-bottom: 2rem;
-    max-height: 500px;
-}
-
-main h1,
-main h2 {
-    color: #333;
-}
-
-h2 {
-    margin-bottom: 0;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
 
 footer {
-    margin-top: 2rem;
     background-color: #f8f8f8;
     padding: 20px;
     display: flex;
@@ -85,84 +132,43 @@ footer {
 .footer-section ul li a:hover {
     text-decoration: underline;
 }
+/* blah blah blah ---------------------*/
+/* Optional Custom CSS */ 
+@media (max-width: 767px) {
 
-.dynamic-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 32% 36% 64% 68%;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    padding: 3rem 2rem;
-}
+    /* Hide navigation menu by default on small screens */
+    #navMenu {
+        display: none ;
+    }
 
-.dynamic-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    background-color: #f3f4f6;
+    /* Adjustments for hamburger icon */
+    #menuToggle {
+        padding: 8px ;
+    }
 }
-
-.highlight {
-    color: #FFD700;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.md\:flex-nowrap {
-    flex-wrap: nowrap;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.w-full {
-    width: 100%;
-}
-
-.md\:w-1\/2 {
-    width: 50%;
-}
-
-.p-4 {
-    padding: 1rem;
-}
-
-#loginModal.hidden {
-    display: none;
-}
-
-#loginModal {
-    display: flex;
-}
-
-.first-section {
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-}
-
-.first-section .dynamic-card {
-    width: 100%;
-    max-width: none;
-    border-radius: 0;
-    padding: 3rem 1rem;
-}
-
-.content-center {
-    width: 100%;
-}
-
-.first-section p {
-    color: white;
-}
+        /* Styling for hamburger menu */
+        #hamburgerMenu { 
+            /* Positioning and overlay */
+            display: none ;
+            /* Ensure it covers entire screen */
+            /* Center content vertically */
+            justify-content: center ;
+            /* Center content horizontally */
+            align-items: center ;
+            /* Background color */
+            /* Increase z-index to ensure it's on top of everything */
+            z-index: 9999 ;
+            /* Initially hidden */
+        }
+   /* Styling for links inside hamburger menu */
+   #hamburgerMenu a {
+             /* Padding for touch area */
+       padding: 8px 0 ; 
+       /* Increase font size */
+       font-size: 1.5rem ;
+       /* Full width */
+       width: 100% ;
+       /* Center text */
+       text-align: center ;
+   }
+   
